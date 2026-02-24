@@ -2,12 +2,12 @@
 
 Полноценное веб-приложение для управления контактами.
 
-# Функции
-
-Регистрация / авторизация (JWT)
-CRUD контактов + поиск
-Редактирование профиля
-Красивый тёмный интерфейс
+## Основные возможности
+- Регистрация и авторизация пользователей
+- Добавление, редактирование, удаление, поиск контактов
+- Редактирование профиля (имя, email)
+- Современный тёмный интерфейс
+- Полностью запускается одной командой
 
 ![Логин](screenshots/login.png)
 ![Регистрация](screenshots/new_account.png)
@@ -15,13 +15,16 @@ CRUD контактов + поиск
 ![Новый_Контакт](screenshots/add_new_contact.png)
 ![Профиль](screenshots/my_profile.png)
 
-## Стек
-- Frontend: Vue 3 + Vite + Tailwind CSS + DaisyUI (тёмный дизайн)
-- Backend: Go + Gin + GORM
-- База: PostgreSQL
-- Всё в Docker Compose
+## Стек технологий
+- **Frontend** — Vue 3 + Vite + Tailwind CSS + DaisyUI (тёмный стиль)
+- **Backend** — Go (Gin + GORM + JWT)
+- **База данных** — PostgreSQL
+- **Контейнеризация** — Docker + Docker Compose
 
-## Запуск
+## Как запустить локально
 
 ```bash
+git clone https://github.com/yngh0m1e/Contact-manager.git
+cd Contact-manager
+
 docker compose up --build
